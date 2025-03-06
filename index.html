@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarjimon Sayti</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="switch-lang">
+        <label for="language">Tilni tanlang:</label>
+        <select id="language">
+          <option value="tg">Tojikcha</option>
+          <option value="tr">Turkcha</option>
+          <option value="en">Englizcha</option>
+          <option value="ar">Arabcha</option>
+        </select>
+      </div>
+      <h1>Tarjimon</h1>
+      <input
+        id="inputText"
+        placeholder="Tarjima qilmoqchi bo'lgan so'zingizni kiriting..."
+      />
+      <button class="btn-1" onclick="translateText()">Tarjima qilish</button>
+      <button class="btn-2" onclick="ClearText()">Hammasini o'chirish</button>
+      <div class="resultBox">
+        <p id="result"></p>
+        <button onclick="copyResult()">Copy📋</button>
+      </div>
+      <div class="Family">
+        <button id="family" onclick="Family()">
+          Man bu ijodkorni taniyman✨
+        </button>
+        <button id="PlayMusic" onclick="playMusic()">
+          🎶 Musiqa ijro etish
+        </button>
+        <button id="PauseMusic" onclick="pauseMusic()">⏸️To'xtatish</button>
+
+        <audio id="myMusic" src="AbroBey-Bolalik-Mood-video.m4a"></audio>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
