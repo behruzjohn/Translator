@@ -154,3 +154,19 @@ p {
 #PauseMusic {
   display: none;
 }
+@media only screen and (max-width: 767px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .resultBox button {
+    position: absolute;
+    left: 65px;
+    top: 556px;
+    margin-left: 420px;
+  }
+  .Family {
+    margin-top: -70px;
+    flex-wrap: nowrap;
+  }
+}
